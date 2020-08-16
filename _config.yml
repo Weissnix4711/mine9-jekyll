@@ -1,0 +1,80 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# General
+title: Mine9 Network
+email: dev.aldrian@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Welcome to the Mine9 server network.
+  We run servers for all your favourite games, including:
+  Minecraft, Terraria, Garry's mod, and more.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.mine9.tk" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en_GB
+logo: /assets/img/logo.png
+
+# Social
+# twitter_username: jekyllrb
+github_username:  Weissnix4711
+social:
+  name: Weissnix4711
+  links: "https://github.com/Weissnix4711"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Defaults
+defaults:
+  - scope:
+      path: "assets/img"
+    value:
+      image: true
+
+# Collections
+collections:
+  posts:
+    permalink: /:categories/:year/:month/:day/:title/
+  servers:
+    output: true
+    permalink: /:collection/:name/
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
