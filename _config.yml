@@ -78,3 +78,8 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+  - nginx/
+  - Dockerfile
+  - docker-compose.yml
