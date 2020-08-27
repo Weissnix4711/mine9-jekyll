@@ -9,6 +9,7 @@ services:
       - ./jekyll:/srv/jekyll
   nginx:
     image: nginx
+    restart: unless-stopped
     volumes:
       - ./jekyll/_site:/var/www/jekyll
       - ./nginx:/etc/nginx/conf.d
