@@ -4,7 +4,7 @@ title: Servers
 permalink: /servers/
 ---
 
-Servers index page:
+We currently have the following servers available:
 
 {% for server in site.servers %}
 
