@@ -30,6 +30,9 @@ url: "https://www.mine9.tk" # the base hostname & protocol for your site, e.g. h
 lang: en_GB
 logo: /assets/img/logo.png
 
+# Game details
+play-address: play.mine9.tk
+
 # Social
 # twitter_username: jekyllrb
 github_username:  Weissnix4711
@@ -57,7 +60,7 @@ collections:
     permalink: /:categories/:year/:month/:day/:title/
   servers:
     output: true
-    permalink: /:collection/:name/
+    permalink: /:collection/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
