@@ -1,0 +1,43 @@
+<hr>
+
+{%- assign server = site.data.join-data | find: "name", server-name -%}
+
+{%- if server -%}
+
+<h3>Join info for {{server-name}}</h3>
+
+{%- if server.status == "online" -%}
+<div class="offline" style="text-align: center;background-color: #4CAF50;color: white;margin-bottom: 15px">
+  <p>
+    This server appears to be online!
+    {%- if server.vote-site -%}
+    <br>Enjoying the server? You can vote <a href="{{server.vote-site}}"">here</a>!
+    {%- endif -%}
+  </p>
+</div>
+{%- else -%}
+<div class="offline" style="text-align: center;background-color: #f44336;color: white;margin-bottom: 15px">
+  <p>
+    This server appears to be offline!
+    <br>
+    Please note: the server may have gone back up, after this website was updated. For the latest status, join our Discord server.
+  </p>
+</div>
+{%- endif -%}
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Port</th>
+  </tr>
+  <tr>
+    <td>{{site.play-address}}</td>
+    <td>{{server.port}}</td>
+  </tr>
+</table>
+
+{%- else -%}
+
+<h3>No data found for server: {{ server-name }}</h3>
+
+{%- endif -%}

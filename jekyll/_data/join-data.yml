@@ -1,0 +1,19 @@
+- name: Lobby
+  port: 19132
+  status: online
+  vote-site: https://minecraftpocket-servers.com/server/103860/
+- name: Factions
+  port: 19140
+  status: offline
+- name: SMP
+  port: 19150
+  status: offline
+- name: Private SMP
+  port: 19151
+  status: online
+- name: Anarchy
+  port: 19190
+  status: offline
+- name: Anarchy Temp
+  port: 19191
+  status: offline
