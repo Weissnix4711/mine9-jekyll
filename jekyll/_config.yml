@@ -48,11 +48,11 @@ plugins:
   - jekyll-sitemap
 
 # Defaults
-defaults:
-  - scope:
-      path: "assets/img"
-    value:
-      image: true
+# defaults:
+#   - scope:
+#       path: "assets/img"
+#     value:
+#       image: true
 
 # Collections
 collections:
