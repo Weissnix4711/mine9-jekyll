@@ -47,6 +47,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Permalink
+permalink: pretty
+
 # Defaults
 # defaults:
 #   - scope:
@@ -57,7 +60,7 @@ plugins:
 # Collections
 collections:
   posts:
-    permalink: /:categories/:year/:month/:day/:title/
+#     permalink: /:categories/:year/:month/:day/:title/
   servers:
     output: true
     permalink: /:collection/:path/
