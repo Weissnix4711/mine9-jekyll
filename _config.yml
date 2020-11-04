@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.mine9.tk" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en_GB
-logo: /assets/img/logo.png
+logo: favicon.png
 
 # Game details
 play-address: play.mine9.tk
@@ -89,3 +89,6 @@ exclude:
   - nginx/
   - Dockerfile
   - docker-compose.yml
+  - .github/
+  - .gitignore
+  - .editorconfig
