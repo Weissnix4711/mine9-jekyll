@@ -5,15 +5,18 @@
 - name: Factions
   port: 19140
   status: offline
+  vote-site: 
 - name: SMP
   port: 19150
   status: offline
 - name: Private SMP
   port: 19151
-  status: online
+  status: offline
+  vote-site: https://minecraftpocket-servers.com/server/104259/
 - name: Anarchy
   port: 19190
-  status: offline
+  status: online
+  vote-site: https://minecraftpocket-servers.com/server/107701/
 - name: Anarchy Temp
   port: 19191
   status: offline
